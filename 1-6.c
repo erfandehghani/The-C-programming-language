@@ -4,12 +4,10 @@
 
 int main()
 {
-    int c;
 
-    while ((c = getchar()) != EOF)
-    {
-        putchar(c);
-    }
+    int c = getchar();
+
+    printf("\n%d \n",(c != EOF));
 
     return 0;
 }
