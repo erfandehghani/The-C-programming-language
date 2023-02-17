@@ -1,4 +1,4 @@
-// This program was ment for checking the value of EOF
+// This program was ment for checking the value of getchar() != EOF
 
 #include "stdio.h"
 
