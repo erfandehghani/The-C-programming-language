@@ -8,7 +8,7 @@ int main()
 
     while ((c = getchar()) != EOF)
     {
-        if (c == 9)
+        if (c == '\t')
             printf("\\t");
         if (c == 8)
             printf("\\b");

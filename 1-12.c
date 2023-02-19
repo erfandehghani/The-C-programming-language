@@ -14,7 +14,7 @@ int main()
     while ((c = getchar()) != EOF)
     {
 
-        if (c != 32)
+        if (c != ' ')
         {
             state = IN;
             putchar(c);
