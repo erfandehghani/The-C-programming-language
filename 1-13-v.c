@@ -55,6 +55,6 @@ int main()
     }
 
     printArray(inputWordsCharacterCounts, WORD_INPUT_THRESHOLD);
-
+    getchar();
     return 0;
 }

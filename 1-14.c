@@ -34,7 +34,7 @@ int main()
         {
             int characterASCIICode = i + 'a';
 
-            printf("%2c\tcount:%d\t\t-> ", characterASCIICode, characterCount[i]);
+            printf("%2c\tcount:%d-> ", characterASCIICode, characterCount[i]);
 
             for (int j = 0; j < characterCount[i]; ++j)
             {
