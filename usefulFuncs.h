@@ -50,3 +50,15 @@ void copy(char to[], char from[])
     while ((to[i] = from[i]) != '\0')
         ++i;
 }
+
+int getText(int maxLengthOfALine, int maxLinesCount, char textLineByLine[maxLinesCount][maxLengthOfALine], int textLinesLength[maxLinesCount])
+{
+    int length,linesCount;
+
+    for (int i = 0; i < maxLinesCount && (length = getLine(textLineByLine[i], maxLengthOfALine)) > 1; ++i)
+    {
+        linesCount = i + 1;
+        textLinesLength[i] = length;
+    }
+    return linesCount;
+}
