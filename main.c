@@ -1,7 +1,7 @@
 #include "stdio.h"
 #include "usefulFuncs.h"
 #include "3-1(BinarySearch).h"
-#include "escape.h"
+#include "3-2(escape and reverseEscape).h"
 
 #define MAXIMUM_CHARACTER_COUNT 1000
 
