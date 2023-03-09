@@ -15,19 +15,21 @@ int main()
 //    printf("%d\n", binarySearch(0, array, 101));
 
 
-    char line[MAXIMUM_CHARACTER_COUNT];
-    char lineEscaped[MAXIMUM_CHARACTER_COUNT];
-    char lineRevEscaped[MAXIMUM_CHARACTER_COUNT];
-    int lineSize;
+//  Escape and Reverse Escape Example
+//    char line[MAXIMUM_CHARACTER_COUNT];
+//    char lineEscaped[MAXIMUM_CHARACTER_COUNT];
+//    char lineRevEscaped[MAXIMUM_CHARACTER_COUNT];
+//    int lineSize;
+//    while ((lineSize = getLine(line, MAXIMUM_CHARACTER_COUNT)) > 1)
+//    {
+//        escape(line,lineEscaped);
+//        reverseEscape(lineEscaped, lineRevEscaped);
+//    }
+//    printf("%s\t <-- the escaped line\n",lineEscaped);
+//    printf("%s\t <-- revEscaped line\n",lineRevEscaped);
 
-    while ((lineSize = getLine(line, MAXIMUM_CHARACTER_COUNT)) > 1)
-    {
-        escape(line,lineEscaped);
-        reverseEscape(lineEscaped, lineRevEscaped);
-    }
+
+//  replacing a-z and such symbols with a,b,c,d,...,x,y,z
 
 
-
-    printf("%s\t <-- the escaped line\n",lineEscaped);
-    printf("%s\t <-- revEscaped line\n",lineRevEscaped);
 }
