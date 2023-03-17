@@ -2,8 +2,12 @@
 #include "usefulFuncs.h"
 #include "3-1(BinarySearch).h"
 #include "3-2(escape and reverseEscape).h"
+#include "3-3(Expanding- Signs).h"
 
-#define MAXIMUM_CHARACTER_COUNT 1000
+#define MAX_LINE_LENGTH 1000                    /* MAXIMUM INPUT SIZE */
+
+void expandSigns(char inputLineOfString[], char exportedLineOFString[]);
+int isACharacterThatWeCover(char ch);
 
 int main()
 {
@@ -30,6 +34,12 @@ int main()
 
 
 //  replacing a-z and such symbols with a,b,c,d,...,x,y,z
+    char inputLine[MAX_LINE_LENGTH];
+    char outputLine[MAX_LINE_LENGTH];
 
+    getLine(inputLine,MAX_LINE_LENGTH);
+
+    expandSigns(inputLine,outputLine);
+    printf("%s\n",outputLine);
 
 }

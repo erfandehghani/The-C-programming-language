@@ -9,6 +9,8 @@ int isCharArrayEqual(char firstArray[] ,char secondArray[]);
 int getLine(char s[], int lim);
 void copy(char to[], char from[]);
 int getCharArraySize(char array[]);
+int isInEnglishAlphabet(char ch);
+int isDigit(char ch);
 
 int getASCIICode(char character)
 {
@@ -47,14 +49,14 @@ void copy(char to[], char from[])
         ++i;
 }
 
-int getText(int maxLengthOfALine, int maxLinesCount, char textLineByLine[maxLinesCount][maxLengthOfALine], int textLinesLength[maxLinesCount])
+int getText(int maxLengthOfALine, int maxLinesCount, char textLineByLine[maxLinesCount][maxLengthOfALine], int lengthOfEachLineInTheText[maxLinesCount])
 {
     int length,linesCount;
 
     for (int i = 0; i < maxLinesCount && (length = getLine(textLineByLine[i], maxLengthOfALine)) > 1; ++i)
     {
         linesCount = i + 1;
-        textLinesLength[i] = length;
+        lengthOfEachLineInTheText[i] = length;
     }
     return linesCount;
 }
@@ -81,4 +83,20 @@ int getCharArraySize(char array[])
     for (i = 0; array[i] != '\0'; ++i)
         ;
     return i;
+}
+
+int isInEnglishAlphabet(char ch)
+{
+    if ((ch >= 65 && ch <= 90) || (ch >= 97 && ch <= 122))
+        return 1;
+    else
+        return 0;
+}
+
+int isDigit(char ch)
+{
+    if (ch >= 48 && ch <= 57)
+        return 1;
+    else
+        return 0;
 }
