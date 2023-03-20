@@ -4,11 +4,11 @@
 #include "3-2(escape and reverseEscape).h"
 #include "3-3(Expanding- Signs).h"
 #include "4-1(strIndex).h"
+#include "4-2(atof).h"
 
 #define MAX_LINE_LENGTH 1000                    /* MAXIMUM INPUT SIZE */
 
-int main()
-{
+int main() {
 
 //    Binary search example
 
@@ -40,12 +40,19 @@ int main()
 //    expandSigns(inputLine,outputLine);
 //    printf("%s\n",outputLine);
 
+//    strIndex test
+//    char line[MAX_LINE_LENGTH];
+//    char pattern[MAX_LINE_LENGTH] = "test";
+//
+//    while(getLine(line,MAX_LINE_LENGTH) != 0)
+//    {
+//        printf("%d\n", strIndex(line, pattern));
+//    }
 
-    char line[MAX_LINE_LENGTH];
-    char pattern[MAX_LINE_LENGTH] = "test";
 
-    while(getLine(line,MAX_LINE_LENGTH) != 0)
-    {
-        printf("%d\n", strIndex(line, pattern));
-    }
+
+//    atof test
+//    char line[MAX_LINE_LENGTH];
+//    getLine(line, MAX_LINE_LENGTH);
+//    printf("%lf", atof(line));
 }
