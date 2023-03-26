@@ -1,5 +1,5 @@
 #include "stdio.h"
-#include "usefulFuncs.h"
+#include "../usefulFuncs.h"
 
 #define EOF '\n'
 #define IN_WORD 1
@@ -13,6 +13,7 @@ int main()
     int state = OUT_WORD;
     int wordsCount = 0;
     int wordCharactersCount = 0;
+    int BiggestWordSize = 0;
 
 
     initArray(inputWordsCharacterCounts, WORD_INPUT_THRESHOLD);
@@ -26,6 +27,8 @@ int main()
         {
             wordCharactersCount++;
             inputWordsCharacterCounts[wordsCount - 1] = wordCharactersCount;
+            if (wordCharactersCount > BiggestWordSize)
+                BiggestWordSize = wordCharactersCount;
             state = IN_WORD;
         }
         else
@@ -37,14 +40,21 @@ int main()
     }
 
 
-    for (int i = 0; i < WORD_INPUT_THRESHOLD; ++i)
+    //Vertical Histogram
+    for (int j = BiggestWordSize; j > 0; --j)
     {
-        for (int j = 0; j < inputWordsCharacterCounts[i]; ++j)
+        for (int i = 0; i < WORD_INPUT_THRESHOLD; ++i)
         {
-            printf("%c",254);
+            if (j <= inputWordsCharacterCounts[i])
+                printf("%2c", 254);
+            else
+                printf("%2c",32);
+            printf("\t");
         }
         printf("\n");
     }
 
+    printArray(inputWordsCharacterCounts, WORD_INPUT_THRESHOLD);
+    getchar();
     return 0;
 }

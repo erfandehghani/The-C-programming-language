@@ -1,8 +1,8 @@
 #include "stdio.h"
 #include "usefulFuncs.h"
-#include "3-1(BinarySearch).h"
-#include "3-2(escape and reverseEscape).h"
-#include "3-3(Expanding- Signs).h"
+#include "Chapter 3/3-1(BinarySearch).h"
+#include "Chapter 3/3-2(escape and reverseEscape).h"
+#include "Chapter 3/3-3(Expanding- Signs).h"
 #include "4-1(strIndex).h"
 #include "4-2(atof).h"
 
@@ -11,7 +11,6 @@
 int main() {
 
 //    Binary search example
-
 //    int array[101];
 //    initArray(array, 101);
 //    printf("%d\n", binarySearch(0, array, 101));

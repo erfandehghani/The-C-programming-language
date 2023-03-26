@@ -1,5 +1,5 @@
 #include "stdio.h"
-#include "usefulFuncs.h"
+#include "../usefulFuncs.h"
 
 #define EOF '\n'
 #define CHARACTER_MAX_COUNT ('z' - 'a' + 3)

@@ -1,5 +1,5 @@
 #include "stdio.h"
-#include "bitcount.h"
+#include "../bitcount.h"
 
 int main()
 {
