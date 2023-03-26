@@ -1,13 +1,18 @@
 # Solutions to Exercises in "The C Programming Language" by Brian W. Kernighan and Dennis M. Ritchie
 
 This repository contains my solutions to the exercises in the book "The C Programming Language". The exercises are organized by chapter, and each chapter has its own directory.
-Installation
 
-Instructions on how to install and run the exercises.
-Usage
+# Installation and Usage
 
-Instructions on how to use the exercises. This section could include information on how to compile and run the programs, as well as any relevant input or output files.
-Exercises
+In Chapter 1, you can compile and run the exercises directly since the answers are written in the main() function.
+
+In Chapter 2, the answers are also written in the main() function, so you can easily compile and run them as well.
+
+However, in Chapter 3, the exercises are organized differently. You will need to include the corresponding header files in your main file and use the functions defined in those files to run the exercises.
+
+Additionally, the main.c file contains example code for each exercise in chapter 3 and some of exercises in chapter 4. To run a specific exercise, you will need to uncomment the relevant code in main.c and then compile and run the program.
+
+# Exercises
 
 A list of the exercises included in the repository, organized by chapter. Each exercise should include a brief description and a link to the source code.
 Chapter 1 - A Tutorial Introduction
@@ -30,12 +35,3 @@ Chapter 3 - Control Flow
     Exercise 3-2: Write a function escape(s, t) that converts characters like newline and tab into visible escape sequences like \n and \t as it copies the string t to s. Use a switch.
     Exercise 3-3: Write a function expand(s1, s2) that expands shorthand notations like a-z in the string s1 into the equivalent complete list abc...xyz in s2. Allow for letters of either case and digits, and be prepared to handle cases like a-b-c and a-z0-9 and -a-z. Arrange that a leading or trailing - is taken literally.
     ...
-
-Contributing
-
-Guidelines on how to contribute to the repository. This section could include information on how to report issues, how to submit pull requests, or any other relevant information.
-License
-
-Information on the license of the exercises. This section could include a link to the license or a brief summary of the license terms.
-
-Feel free to customize this template to fit the specific needs of your exercises repository. Remember that a well-written README file can help others understand your repository and encourage contributions.
