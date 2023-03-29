@@ -3,8 +3,8 @@
 #include "Chapter 3/3-1(BinarySearch).h"
 #include "Chapter 3/3-2(escape and reverseEscape).h"
 #include "Chapter 3/3-3(Expanding- Signs).h"
-#include "4-1(strIndex).h"
-#include "4-2(atof).h"
+#include "Chapter 4/4-1(strIndex).h"
+#include "Chapter 4/4-2(atof).h"
 
 #define MAX_LINE_LENGTH 1000                    /* MAXIMUM INPUT SIZE */
 
