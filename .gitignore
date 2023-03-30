@@ -2,3 +2,18 @@
 CMakeLists.txt
 /.idea/
 README.md
+*.sln
+*.json
+*.sqlite
+*.vsidx
+*.lock
+*.db
+.vs/The C programming language/v17/.suo
+*.db-shm
+*.db-wal
+*.opendb
+*.ipch
+*.vcxproj
+*.filters
+*.user
+*.json
