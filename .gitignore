@@ -17,3 +17,12 @@ README.md
 *.filters
 *.user
 *.json
+*.obj
+*.tlog
+*.pdb
+.vs/The C programming language/v17/.wsuo
+*.idb
+*.log
+main.exe
+main.exe
+*.exe
