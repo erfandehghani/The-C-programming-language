@@ -7,7 +7,7 @@
 //#include "Chapter 4/4-1(strIndex).h"
 //#include "Chapter 4/4-2(atof).h"
 //#include "5-1 (getint).c"
-#include "5-4 (strend).c"
+#include "Chapter 5/5-4 (strend).c"
 
 #define MAX_LINE_LENGTH 1000                    /* MAXIMUM INPUT SIZE */
 

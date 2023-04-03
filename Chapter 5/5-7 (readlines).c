@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-#include "usefulFuncs.h"
+#include "../usefulFuncs.h"
 
 #define MAXLINES 5000 /* max number of lines to be sorted */
 #define MAXLEN 1000 /* max length of any input line */
