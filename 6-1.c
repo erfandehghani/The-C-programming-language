@@ -142,7 +142,7 @@ int getword(char *word, int lim)
 
     while (--lim > 0)
     {
-        if(!isalnum(*w = getch()))
+        if(!isalnum(*w = getch()) && *w != '_')
         {
             ungetch(*w);
             break;
