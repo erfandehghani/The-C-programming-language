@@ -7,7 +7,6 @@
 #define MAXWORD 1000
 #define MAX_NUMBER_OF_WORDS_IN_STRUCT 5000
 #define MAX_NUMBER_STRUCTS 5000
-#define MAX_VARIABLE_TYPE_CHARACTERS_COUNT 10
 
 struct variableGroup {
     char *word[MAX_NUMBER_OF_WORDS_IN_STRUCT];
@@ -18,10 +17,11 @@ struct variableGroup *variableGroupsList[MAX_NUMBER_STRUCTS];
 int numberOfSavedVariables = 0;
 
 int getword(char *, int);
+char *checkArgs(char *argv[], int argc, char *pattern);
 
-int main()
-{
-    int numberOfChars = 4;
+int main(int argc, char *argv[]) {
+
+    int numberOfChars = 2;
     char word[MAXWORD];
     char *variableTypes[] = {
             "int",
@@ -29,6 +29,17 @@ int main()
             "double",
             "float",
     };
+    char *arg;
+
+    if ((arg = checkArgs(argv, argc, "-n")) != 0)
+    {
+        while(*arg++ != '=')
+            ;
+        if(isdigit(*arg))
+        {
+            numberOfChars = atoi(arg);
+        }
+    }
 
     while (getword(word, MAXWORD) != EOF)
     {
@@ -195,4 +206,12 @@ int getword(char *word, int lim)
 
     *w = '\0';
     return word[0];
+}
+
+char *checkArgs(char *argv[], int argc, char *pattern)
+{
+    for (int i = 1; i < argc; ++i)
+        if (strncmp(argv[i], pattern, 2) == 0)
+            return argv[i];
+    return 0;
 }
