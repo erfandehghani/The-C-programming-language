@@ -2,7 +2,7 @@
 #include <ctype.h>
 #include <string.h>
 #include "stdlib.h"
-#include "usefulFuncs.h"
+#include "../usefulFuncs.h"
 
 #define MAXWORD 1000
 #define MAX_NUMBER_OF_WORDS_IN_STRUCT 5000

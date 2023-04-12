@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <ctype.h>
 #include <string.h>
-#include "usefulFuncs.h"
+#include "../usefulFuncs.h"
 
 #define MAXWORD 100
 
