@@ -1,29 +1,33 @@
 #include "stdio.h"
 
-union a {
-    float f;
-    char ch;
-};
+union {
+    float fp;
+    unsigned char ch;
+    unsigned char string[4];
+    int i;
+}test;
 
 int main()
 {
-    union a test;
 
-    test.f = 152.54;
+    test.fp = 1023;
 
-    unsigned char *character = (unsigned char *) &test.f;
+    int x = sizeof(test);
+    int count = 3;
 
-    int x = sizeof(test.f);
-    int count = 1;
+    for (int i = 0; i < 4; ++i) {
+        printf("%d\n", test.string[i]);
+    }
+
+    printf("\n\n\n");
 
     while (x-- > 0)
     {
-        printf("Byte Number %d: %c\tASCII Code: %4d\tBinary code of: ", count++, *character, (int)*character);
         for (int i = 7; i >= 0; i--) {
-            printf("%d", (*character >> i) & 1);
+            printf("%d", (*(&(test.ch)+count) >> i) & 1);
         }
-        printf("\n");
-        character++;
+        printf(",");
+        count--;
     }
 
 }

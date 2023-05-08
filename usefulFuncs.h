@@ -19,7 +19,6 @@ void copy(char to[], char from[]);
 int getCharArraySize(char array[]);
 int isInEnglishAlphabet(char ch);
 int isDigit(char ch);
-int getText(int maxLengthOfALine, int maxLinesCount, char textLineByLine[maxLinesCount][maxLengthOfALine], int lengthOfEachLineInTheText[maxLinesCount]);
 int getch(void);
 void ungetch(int c);
 
@@ -44,7 +43,7 @@ int getLine(char s[], int lim) {
     for (i = 0; i < lim && (c = getchar()) != EOF && c != '\n'; i++)
         s[i] = c;
     s[i] = '\0';
-    return i;
+    return i-1;
 }
 
 void copy(char to[], char from[]) {
@@ -54,14 +53,6 @@ void copy(char to[], char from[]) {
         ++i;
 }
 
-int getText(int maxLengthOfALine, int maxLinesCount, char textLineByLine[maxLinesCount][maxLengthOfALine], int lengthOfEachLineInTheText[maxLinesCount]) {
-    int length, linesCount;
-    for (int i = 0; i < maxLinesCount && (length = getLine(textLineByLine[i], maxLengthOfALine)) > 1; ++i) {
-        linesCount = i + 1;
-        lengthOfEachLineInTheText[i] = length;
-    }
-    return linesCount;
-}
 
 int isCharArrayEqual(char firstArray[], char secondArray[]) {
     return strcmp(firstArray, secondArray) == 0;

@@ -48,7 +48,7 @@ char popVar(void);
 void pushVar(char);
 void clearVariableStack();
 
-//  4-3, 4-4, 4-5, 4-6 (Reverse Polish Calculator)
+//  Meeting 3 - Switch-3, Meeting 3 - Switch-Meeting 3 - Switch, Meeting 3 - Switch-5, Meeting 3 - Switch-6 (Reverse Polish Calculator)
 
 
 int main()

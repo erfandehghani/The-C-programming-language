@@ -24,3 +24,6 @@ README.md
 *.idb
 *.log
 *.exe
+Calculator/.vs/Calculator/v17/.suo
+*.recipe
+*.ilk
