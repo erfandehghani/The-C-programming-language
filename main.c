@@ -4,11 +4,10 @@
 //#include "Chapter 3/3-1(BinarySearch).h"
 //#include "Chapter 3/3-2(escape and reverseEscape).h"
 //#include "Chapter 3/3-3(Expanding- Signs).h"
-//#include "Chapter Meeting 3 - Switch/Meeting 3 - Switch-1(strIndex).h"
-//#include "Chapter Meeting 3 - Switch/Meeting 3 - Switch-2(atof).h"
+//#include "Chapter 4/4-1(strIndex).h"
+//#include "Chapter 4/4-2(atof).h"
 //#include "5-1 (getint).c"
 #include "Chapter 5/5-4 (strend).c"
-#include "time.h"
 
 #define MAX_LINE_LENGTH 1000                    /* MAXIMUM INPUT SIZE */
 
@@ -71,7 +70,7 @@ int main() {
 //    getchar();
 //    return 0;
 
-//    test for 5-Meeting 3 - Switch (strend())
+//    test for 5-4 (strend())
 //    const char *s1 = "hello world";
 //    const char *t1 = "world";
 //    const char *s2 = "hello world";
@@ -93,5 +92,6 @@ int main() {
 //        printf("'%s' ends with '%s'\n", s3, t3);
 //    else
 //        printf("'%s' does not end with '%s'\n", s3, t3);
+
     return 0;
 }

@@ -242,7 +242,6 @@ const int letter_shapes[27][ROWS][COLUMNS] = {
                 {1, 0, 0, 0, 1, 0},
                 {1, 0, 0, 0, 1, 0},
         },
-
         // Y shape
         {
                 {1, 0, 0, 0, 0, 1},
